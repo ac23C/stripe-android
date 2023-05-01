@@ -93,8 +93,7 @@
         android:id="@+id/tl_phone_number_aaw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/stripe_add_address_vertical_margin"
-        android:hint="@string/address_label_phone_number">
+        android:layout_marginTop="@dimen/stripe_add_address_vertical_margin">
 
         <com.stripe.android.view.StripeEditText
             android:id="@+id/et_phone_number_aaw"

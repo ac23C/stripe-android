@@ -78,7 +78,7 @@ fun PhoneNumberElementUI(
     controller.onSelectedCountryIndex(selectedIndex)
     val value by controller.fieldValue.collectAsState("")
     val shouldShowError by controller.error.collectAsState(null)
-    val label by controller.label.collectAsState(R.string.address_label_phone_number)
+    val label by controller.label.collectAsState(R.string.form_label_optional)
     val placeholder by controller.placeholder.collectAsState("")
     val visualTransformation by controller.visualTransformation.collectAsState(VisualTransformation.None)
     val colors = TextFieldColors(shouldShowError != null)

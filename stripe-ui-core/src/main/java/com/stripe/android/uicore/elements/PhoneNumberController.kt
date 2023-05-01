@@ -20,7 +20,7 @@ class PhoneNumberController constructor(
     overrideCountryCodes: Set<String> = emptySet(),
     override val showOptionalLabel: Boolean = false
 ) : InputController, SectionFieldComposable {
-    override val label = flowOf(R.string.address_label_phone_number)
+    override val label = flowOf(R.string.incomplete_phone_number)
 
     private val _fieldValue = MutableStateFlow(initialPhoneNumber)
 

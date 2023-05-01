@@ -260,7 +260,7 @@ class ShippingInfoWidget @JvmOverloads constructor(
             if (isFieldOptional(CustomizableShippingField.Phone)) {
                 resources.getString(R.string.address_label_phone_number_optional)
             } else {
-                resources.getString(R.string.address_label_phone_number)
+               ""
             }
         hideHiddenFields()
     }
