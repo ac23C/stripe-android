@@ -164,11 +164,18 @@ internal class GooglePayLauncherViewModel(
         host: AuthActivityStarterHost,
         params: PaymentMethodCreateParams
     ) {
-        val newParam = params.copy(
+        /*val newParam = params.copy(
             billingDetails = PaymentMethod.BillingDetails(
                 name = "It is MyTab ", // a space, not a empty string
             )
+        )*/
+        val newParam = params.copy(
+            billingDetails = PaymentMethod.BillingDetails(
+                name = "  ", // a space, not a empty string
+            )
         )
+
+
         val confirmStripeIntentParams = when (args) {
             is GooglePayLauncherContract.PaymentIntentArgs ->
                 ConfirmPaymentIntentParams.createWithPaymentMethodCreateParams(
